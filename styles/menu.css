@@ -53,12 +53,7 @@
     background-color: #222;
     color: #FFF;
     z-index: 9;
-}
-.mainMenu a.arrow
-{
-    background: url(arrow.gif) no-repeat right center;
-}
- 
+} 
         
 /*Used to align a top-level item to the right*/        
 .mainMenu li.menuRight
@@ -178,4 +173,75 @@
     -moz-box-shadow: 0px 8px 14px #777;
     -webkit-box-shadow: 0px 8px 14px #777;
     box-shadow: 0px 8px 14px #777;  
+}
+form
+{
+    margin: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    height: 100%;
+}
+
+button
+{
+    margin-right: 15px;
+    color: white;
+    background: #444;
+    border: none;
+    height: 100%;
+    width: 65px;
+}
+
+#register
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+input
+{
+    margin-right: 15px;
+    text-align: center;
+    width: 95px;
+}
+
+#register input
+{
+    margin-top: 15px;
+    width: 150px;
+    text-align: left;
+    display: inline-flex;
+    align-content: right;
+}
+
+#register label
+{
+    margin-top: 15px;
+    display: inline-flex;
+    color: white;
+}
+
+#register fieldset
+{
+    background-color: #444;
+    border: white solid 5px;
+    border-radius: 5px;
+}
+
+#register button
+{
+    margin: auto;
+    margin-top: 20px;
+    border: white 2px solid;
+    border-radius: 3px;
+    width: 80px;
+    height: 45px;
+    font-size: 15pt;
+}
+#register button[type=reset]
+{
+    float: right;
 }
