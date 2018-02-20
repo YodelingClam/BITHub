@@ -2,7 +2,6 @@
     session_start();
 ?>
 <link rel="stylesheet" type="text/css" href="styles/menu.css"/>
-<script type="text/javascript" src="scripts/menu.js"></script>
 <?php if (isset($_GET['invalidLogin'])) : ?>
     <script type='text/javascript'>alert('Invalid email or password!');</script>
 <?php endif ?>
@@ -10,7 +9,7 @@
     <li><a href="index.php">Home</a></li>
     <li class="separator"></li>
     <li><a href="#">Ask</a>
-        <div class="drop decor3_2" style="width: 100px;">
+        <div class="drop decor3_2">
             <div class="left">
                 <a href="questions.php?new">New</a><br />
                 <a href="questions.php?my">My Questions</a><br />
@@ -20,7 +19,7 @@
     </li>
     <li class="separator"></li>
     <li><a href="#">Answer</a>
-        <div class="drop decor3_2" style="width: 100px;">
+        <div class="drop decor3_2" >
             <div class="left">
                 <a href="answers.php?course">Answer by Course</a><br />
                 <a href="answers.php?tag">Answer by Tag</a><br />
@@ -32,7 +31,7 @@
     </li>
     <li class="separator"></li>
     <li><a href="#">Browse</a>
-        <div class="drop decor3_2" style="width: 100px;">
+        <div class="drop decor3_2" >
             <div class="left">
                 <a href="search.php">Search</a><br />
                 <a href="browse.php?course">Browse by Course</a><br />
@@ -49,10 +48,9 @@
             <div class="drop decor3_2 dropToLeft" style="width: 460px;">
                 <img src=<?= $userPic ?> alt="profile picture" style="float:left; width:200px; height:200px;margin:10px 80px 10px 40px;" />
                 <div class="left">
-                    <b><?= $userId ?></b>
+                    <b><?= $_SESSION["userName"].' '.$_SESSION["userLName"] ?></b>
                     <div>
                         <a href="profile.php">Profile</a><br />
-                        <a href="resetPassword.php">Reset Password</a><br />
                         <a href="logout.php">Logout</a>
                     </div>
                 </div>

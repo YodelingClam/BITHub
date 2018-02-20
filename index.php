@@ -7,7 +7,7 @@
 <head>
 	<title>BITHub</title>
 </head>
-<body>
+<body style="height: 10000px">
 	<?php include 'menu.php'; ?>
 </body>
 </html>

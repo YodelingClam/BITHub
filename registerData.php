@@ -1,5 +1,5 @@
 <?php 
-function file_upload_path($original_filename, $upload_subfolder_name = 'images\users') {
+function file_upload_path($original_filename, $upload_subfolder_name = 'images/users') {
 	$current_folder = dirname(__FILE__);
 	$path_parts = pathinfo($original_filename);
 	$path_segments = [$current_folder, $upload_subfolder_name, $_POST['firstname'].'_'.$_POST['lastname'].'.'.$path_parts['extension']];
@@ -37,7 +37,7 @@ if ($_POST['password'] == $_POST['password2']) {
 	$path_parts = pathinfo($image_filename);
 	$ProfilePicURL = $_POST['firstname'].'_'.$_POST['lastname'].'.'.$path_parts['extension'];
 	require 'connect.php';
-	$query = "INSERT INTO users (FName, LName, Email, PasswordHash, ProfilePicURL) VALUES (:fname, :lname, :email, :passwordhash, :ProfilePicURL)";
+	$query = "INSERT INTO Users (FName, LName, Email, PasswordHash, ProfilePicURL) VALUES (:fname, :lname, :email, :passwordhash, :ProfilePicURL)";
 	$statement = $db -> prepare($query);
 	$statement -> bindValue(":fname", $fname);
 	$statement -> bindValue(":lname", $lname);

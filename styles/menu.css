@@ -4,9 +4,9 @@
 {
     align-content: center;
     margin: 0 auto; 
-    width: 100%; 
+    width: 98%; 
     float: none;
-    position: relative;
+    position: fixed;
     z-index:4;
     height: 36px;
     background: #444;
@@ -14,8 +14,9 @@
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
     padding: 0;
-    justify-content: center;
+    justify-content: space-evenly;
     display: flex;
+    top: 5px;
 }
 
 .mainMenu div {
@@ -23,12 +24,15 @@
 }  
 
 .mainMenu li
-{
+{/*
     padding: 0;
-    float: left;
+    float: left;*/
     height: 36px;
     position: relative;/*delete it if you want submenu to be positioned relative to the whole menu instead of this li element*/
     color: #EEE;
+    display: flex;
+    width: 100%;
+    justify-content: center;
     z-index:5;
 }
 
@@ -40,13 +44,16 @@
 {
     padding: 0 30px;
     line-height: 36px; /*Note: keep this value the same as the height of .mainMenu li */
-    font-size: 12px;
+    font-size: 16px;
     font-weight: normal;
     display: inline-block;
     outline: 0;
     text-decoration: none;
     color: #FFF;
-    position: relative;
+/*    position: relative;*/
+    text-align: center;
+    margin: auto;
+    width: 100%;
 }
 .mainMenu li:hover a, .mainMenu li.onhover a
 {
@@ -71,6 +78,7 @@
     height:20px;
     margin-top:8px;
     z-index:4;
+    width: 1px;
 }
                
         
@@ -88,6 +96,7 @@
     padding: 20px;  
     top:35px;
     color:#999;
+    width: 100%
 }
 
 .mainMenu .drop a
@@ -95,18 +104,17 @@
     padding-left: 0px;
     padding-right: 0px;
     line-height: 26px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
     display: inline;
     text-align: left;
-    
     position: static;
     z-index: 0;
 }
 
 .mainMenu li:hover .drop, .mainMenu li.onhover .drop
 {
-    left: -1px;/*Use this property to change offset of the dropdown*/
+    left: 1px;/*Use this property to change offset of the dropdown*/
 }
 .mainMenu li:hover .dropToLeft, .mainMenu li.onhover .dropToLeft
 {
@@ -239,7 +247,7 @@ input
     border-radius: 3px;
     width: 80px;
     height: 45px;
-    font-size: 15pt;
+    font-size: 16pt;
 }
 #register button[type=reset]
 {
