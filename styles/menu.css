@@ -4,9 +4,9 @@
 {
     align-content: center;
     margin: 0 auto; 
-    width: 98%; 
+    width: 99%; 
     float: none;
-    position: fixed;
+    position: fixed;/* may need for scrolling*/
     z-index:4;
     height: 36px;
     background: #444;
@@ -162,9 +162,9 @@
 /*for top-level*/       
 .decor3_1 
 {
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 
     -moz-box-shadow: 1px 2px 4px 2px #999;
     -webkit-box-shadow: 1px 2px 4px 2px #999;
@@ -174,15 +174,15 @@
 /*for submenu.*/   
 .decor3_2 
 {
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
 
     -moz-box-shadow: 0px 8px 14px #777;
     -webkit-box-shadow: 0px 8px 14px #777;
     box-shadow: 0px 8px 14px #777;  
 }
-form
+.mainMenu form
 {
     margin: auto;
     display: inline-flex;
@@ -194,7 +194,6 @@ form
 
 button
 {
-    margin-right: 15px;
     color: white;
     background: #444;
     border: none;
@@ -209,14 +208,16 @@ button
     align-content: center;
 }
 
-input
+.mainMenu input
 {
     margin-right: 15px;
     text-align: center;
-    width: 95px;
+    width: 150px;
+    height: 50%;
+    margin-top: 5px;
 }
 
-#register input
+#my-div input
 {
     margin-top: 15px;
     width: 150px;
@@ -225,31 +226,40 @@ input
     align-content: right;
 }
 
-#register label
+#my-div label
 {
     margin-top: 15px;
     display: inline-flex;
     color: white;
 }
 
-#register fieldset
+#my-div fieldset
 {
     background-color: #444;
-    border: white solid 5px;
+    border: black solid 5px;
     border-radius: 5px;
 }
 
-#register button
+#my-div button
 {
     margin: auto;
     margin-top: 20px;
-    border: white 2px solid;
-    border-radius: 3px;
+    border: black 2px solid;
+    border-radius: 5px;
     width: 80px;
     height: 45px;
     font-size: 16pt;
 }
-#register button[type=reset]
+#my-div button[type=reset]
 {
     float: right;
+}
+#clear
+{
+    height: 40px;
+}
+#my-div {
+    position: absolute;
+    z-index: 10; /* Make sure its above other items. */
+    top: 50px;
 }

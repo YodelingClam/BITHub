@@ -1,6 +1,6 @@
 var fileTypes = [
 'image/jpeg',
-'image/pjpeg',
+'image/jpeg',
 'image/png'
 ]
 
