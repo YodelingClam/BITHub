@@ -23,7 +23,7 @@ crossorigin="anonymous"></script>
             <div class="drop decor3_2">
                 <div class="left">
                     <a href="newPost.php">New</a><br />
-                    <a href="questions.php?my">My Questions</a><br />
+                    <!-- <a href="questions.php?my">My Questions</a><br /> -->
                 </div>
                 <div style="clear: both;"></div>
             </div>
@@ -33,9 +33,9 @@ crossorigin="anonymous"></script>
             <div class="drop decor3_2" >
                 <div class="left">
                     <a href="answers.php?search=course">Answer by Course</a><br />
-                    <a href="answers.php?search=tag">Answer by Tag</a><br />
+                    <!-- <a href="answers.php?search=tag">Answer by Tag</a><br /> -->
                     <a href="answers.php?search=recent">Recent Questions</a><br />
-                    <a href="answers.php?search=my">My Answers</a>
+                    <!-- <a href="answers.php?search=my">My Answers</a> -->
                 </div>
                 <div style="clear: both;"></div>
             </div>
@@ -47,7 +47,7 @@ crossorigin="anonymous"></script>
             <div class="left">
                 <a href="browse.php?type=search&by=">Search</a><br />
                 <a href="browse.php?type=course">Browse by Course</a><br />
-                <a href="browse.php?type=tag">Browse by Tag</a><br />
+                <!-- <a href="browse.php?type=tag">Browse by Tag</a><br /> -->
             </div>
             <div style="clear: both;"></div>
         </div>
