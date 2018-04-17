@@ -263,3 +263,7 @@ button
     z-index: 10; /* Make sure its above other items. */
     top: 50px;
 }
+.whiteText
+{
+    color: #999;
+}

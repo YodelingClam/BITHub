@@ -4,7 +4,7 @@ if (!isset($_SESSION)) {
 }
 require "vendor/autoload.php";
 ?>
-
+<script src="https://cdn.ckeditor.com/ckeditor5/1.0.0-beta.1/classic/ckeditor.js"></script>
 <link rel="stylesheet" type="text/css" href="styles/menu.css"/>
 <script
 src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -19,27 +19,27 @@ crossorigin="anonymous"></script>
     <li><a href="index.php">Home</a></li>
     <?php if (isset($_SESSION['userId'])): ?>
         <li class="separator"></li>
-        <li><a href="#">Ask</a>
-            <div class="drop decor3_2">
+        <li><a href="newPost.php">Ask</a>
+            <!-- <div class="drop decor3_2">
                 <div class="left">
                     <a href="newPost.php">New</a><br />
-                    <!-- <a href="questions.php?my">My Questions</a><br /> -->
+                    <a href="questions.php?my">My Questions</a><br />
                 </div>
                 <div style="clear: both;"></div>
-            </div>
+            </div> -->
         </li>
-        <li class="separator"></li>
-        <li><a href="#">Answer</a>
-            <div class="drop decor3_2" >
+        <!-- <li class="separator"></li> -->
+        <!-- <li><a href="answers.php?search=recent">Answer</a> -->
+            <!-- <div class="drop decor3_2" >
                 <div class="left">
                     <a href="answers.php?search=course">Answer by Course</a><br />
-                    <!-- <a href="answers.php?search=tag">Answer by Tag</a><br /> -->
+                    <a href="answers.php?search=tag">Answer by Tag</a><br />
                     <a href="answers.php?search=recent">Recent Questions</a><br />
-                    <!-- <a href="answers.php?search=my">My Answers</a> -->
+                    <a href="answers.php?search=my">My Answers</a>
                 </div>
                 <div style="clear: both;"></div>
-            </div>
-        </li>
+            </div> -->
+        <!-- </li> -->
     <?php endif ?>
     <li class="separator"></li>
     <li><a href="#">Browse</a>
