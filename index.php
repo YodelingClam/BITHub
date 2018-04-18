@@ -21,7 +21,8 @@ $courses = $statement->fetchAll();
 		<div class="row">
 			<div id="redditThing" class="column">
 				<script src='https://redditjs.com/subreddit.js' data-subreddit='programming' data-theme='dark' ></script>
-				<form style="width: 100%; margin: auto;" id="newPost" method="post" action="submitPost.php">
+				<?php if (isset($_SESSION['userId'])): ?>
+					<form style="width: 100%; margin: auto;" id="newPost" method="post" action="submitPost.php">
 					<fieldset>
 						<input id="title" name="title" type="text" placeholder="Title of question" required autofocus/><br>
 						<textarea id="editor" name="content" rows='10' style="width: 100%; height: 250px;"></textarea><br>
@@ -56,8 +57,9 @@ $courses = $statement->fetchAll();
 					height: 150px;
 					width: 100%;
 				}
-			</style>
-		</div>
+				</style>
+				<?php endif ?>
+			</div>
 		<div class="column">
 			<?php 
 			$query = "SELECT * FROM question JOIN users USING(UserId) JOIN course USING(CourseId) ORDER BY TimeStamp DESC";
