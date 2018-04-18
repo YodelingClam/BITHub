@@ -127,6 +127,7 @@ $question = $statement->fetch();
 						<?php if ($question['Selected'] == $answer['AnswerId']): ?>
 							<img src="images/check.png" alt="chosen" width="35" height="35">
 						<?php else: ?>
+							<?php if ($_SESSION['userId'] == $question['UserId']): ?>
 							<a href="#" onclick="
 							$.ajax({
 								async: true,
@@ -137,6 +138,7 @@ $question = $statement->fetch();
 								success: function(){location.reload();} 
 							});
 							">Select</a>
+							<?php endif ?>
 						<?php endif ?>
 						
 
