@@ -1,0 +1,116 @@
+.profile-box * {
+  margin: 0;
+  padding: 0;
+}
+
+.profile-box *,
+.profile-box *:before,
+.profile-box *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.profile-box img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+/* Profile Container */
+.profile-box {
+  position: relative;
+  display: inline-block;
+  /*margin: 2em;*/
+  padding: 1em 0 0.5em;
+  /*border: 1px solid rgba(0, 0, 0, 0.6);*/
+  border-radius: 5px;
+  background-color: #222 /*rgba(60, 60, 60, 0.3);*/
+  /*box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), 0 2px 1px rgba(255, 255, 255, 0.3) inset;*/
+  color: #fff;
+  vertical-align: middle;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  font-family: Arial, Helvetica, sans-serif;
+  width: 365px;
+}
+.profile-box .profile-header {
+  margin: 0;
+  padding: 1em 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  text-align: center;
+  /* Profil Image*/
+  /* Profile Name */
+}
+.profile-box .profile-header .profile-img {
+  display: inline-block;
+  margin: 0 1em;
+  padding: 0.6em;
+  border-radius: 50%;
+  background-color: rgba(40, 40, 40, 0.4);
+  box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.2), 0 0 8px rgba(0, 0, 0, 0.5) inset;
+  /* Image container */
+}
+.profile-box .profile-header .profile-img span {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+  vertical-align: middle;
+}
+.profile-box .profile-header .profile-name {
+  margin: 0.75em 0 0;
+  padding: 0 0.5em;
+  font-size: 1.6em;
+}
+.profile-box .profile-detail {
+  overflow: hidden;
+  padding: 0.8em;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  font-size: 0.8em;
+  /* Profil Details Values */
+}
+.profile-box .profile-detail:last-child {
+  box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.1);
+}
+.profile-box .profile-detail span {
+  float: left;
+  padding: 0.6em 1em;
+}
+.profile-box .profile-detail .profile-value {
+  float: right;
+  margin-left: 1.5em;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.2), 0 0 8px rgba(0, 0, 0, 0.5) inset;
+  text-align: center;
+  font-weight: bold;
+}
+.profile-box .profile-btn-contact:hover {
+  background-color: rgba(255, 104, 0, 0.1);
+}
+
+/* Big Profile Box */
+.big {
+  font-size: 1.3em;
+}
+.big .profile-detail {
+  font-size: 0.7em;
+}
+.profile-box *:focus
+{
+  outline: none;
+}
+
+/*added be me*/
+#clickToChange
+{
+  position: absolute;
+  width: 100px;
+  left: 21%;
+  top: 27%;
+  z-index: 1;
+  opacity: .6;
+  display: none;
+}

@@ -1,0 +1,19 @@
+{
+    "name": "zack/bit-hub",
+    "description": "webdev final project",
+    "type": "project",
+    "authors": [
+        {
+            "name": "yodelingclam",
+            "email": "zack.ogilvie@gmail.com"
+        }
+    ],
+    "require": {
+        "components/jquery": "^3.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    }
+}

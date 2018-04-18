@@ -1,0 +1,1190 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"as",
+				"async"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"JSON_",
+				"json_encode"
+			],
+			[
+				"on",
+				"onchange\tAttr"
+			],
+			[
+				"qu",
+				"quesionid"
+			],
+			[
+				"Col",
+				"collumn"
+			],
+			[
+				"Ren",
+				"RentalType"
+			],
+			[
+				"Rental",
+				"RentalAgreement"
+			],
+			[
+				"Boo",
+				"BookID"
+			],
+			[
+				"Agr",
+				"AgreementID"
+			],
+			[
+				"Con",
+				"ContributorID"
+			],
+			[
+				"REN",
+				"RentalCost"
+			],
+			[
+				"C",
+				"CREATE"
+			],
+			[
+				"t23",
+				"t233_SaleManager_Role"
+			],
+			[
+				"t233_",
+				"t233_Salesperson_Role"
+			],
+			[
+				"Movi",
+				"MovieRented"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"style",
+				"style\tAttr"
+			],
+			[
+				"pr",
+				"ProfilePicURL"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"profil",
+				"profile-img"
+			],
+			[
+				"onmo",
+				"onmouseover\tAttr"
+			],
+			[
+				"SEss",
+				"session_start"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"text",
+				"textAngular"
+			],
+			[
+				"sess",
+				"session_start"
+			],
+			[
+				"a",
+				"ajax"
+			],
+			[
+				"label",
+				"label"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"abs",
+				"absolute"
+			],
+			[
+				"finfo",
+				"finfo_file"
+			],
+			[
+				"strlo",
+				"strtolower"
+			],
+			[
+				"ov",
+				"overflow-y"
+			],
+			[
+				"con",
+				"contain"
+			],
+			[
+				"al",
+				"align-content"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"over",
+				"overflow-wrap"
+			],
+			[
+				"align",
+				"align-content"
+			],
+			[
+				"D",
+				"display"
+			],
+			[
+				"strt",
+				"strtolower"
+			],
+			[
+				"comm",
+				"common_name"
+			],
+			[
+				"se",
+				"session_destroy"
+			],
+			[
+				"res",
+				"restart"
+			],
+			[
+				"va",
+				"validYear"
+			],
+			[
+				"is",
+				"is_int"
+			],
+			[
+				"valid",
+				"validYear"
+			],
+			[
+				"he",
+				"hero_name"
+			],
+			[
+				"real",
+				"real_name"
+			],
+			[
+				"vali",
+				"validReal"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"c",
+				"contain"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"ba",
+				"background-repeat"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"bor",
+				"border-box"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"grid-tem",
+				"grid-template-rows"
+			],
+			[
+				"ac",
+				"actual_file_extension"
+			],
+			[
+				"new_",
+				"new_image_path"
+			],
+			[
+				"val",
+				"validFileType"
+			],
+			[
+				"col",
+				"column_name"
+			],
+			[
+				"COnst",
+				"constraint_name"
+			],
+			[
+				"P",
+				"PUT_LINE"
+			],
+			[
+				"DBMS",
+				"DBMS_OUTPUT"
+			],
+			[
+				"const",
+				"constraint_name"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"filter",
+				"filter_var"
+			],
+			[
+				"user",
+				"userId"
+			],
+			[
+				"cen",
+				"center"
+			],
+			[
+				"ce",
+				"center"
+			],
+			[
+				"re",
+				"required\tAttr"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"g",
+				"grid-template-rows"
+			],
+			[
+				"guess",
+				"guessCount"
+			],
+			[
+				"u",
+				"user_submitted_a_guess"
+			],
+			[
+				"session",
+				"session_destroy"
+			],
+			[
+				"stat",
+				"statement"
+			],
+			[
+				"fi",
+				"fixed"
+			],
+			[
+				"pro",
+				"provinceRegex"
+			],
+			[
+				"card",
+				"cardtype"
+			],
+			[
+				"preg",
+				"preg_match"
+			],
+			[
+				"isn",
+				"is_numeric"
+			],
+			[
+				"su",
+				"success"
+			],
+			[
+				"we",
+				"weekend"
+			],
+			[
+				"nuber",
+				"number_of_cigars"
+			],
+			[
+				"ci",
+				"cigar_party"
+			],
+			[
+				"number",
+				"number_of_cigars"
+			],
+			[
+				"var",
+				"var_export"
+			],
+			[
+				"sty",
+				"style\tAttr"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"lis",
+				"list-style"
+			],
+			[
+				"san",
+				"sans-serif"
+			],
+			[
+				"node",
+				"nodeValue"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"ge",
+				"getElementsByClassName"
+			],
+			[
+				"vi",
+				"visible"
+			],
+			[
+				"vis",
+				"visible"
+			],
+			[
+				"v",
+				"visibility"
+			],
+			[
+				"s",
+				"style"
+			],
+			[
+				"get",
+				"getElementsByClassName"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"borde",
+				"border-radius"
+			],
+			[
+				"getEle",
+				"getElementsByTagName"
+			],
+			[
+				"div",
+				"div"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"document",
+				"documentElement"
+			],
+			[
+				"backgrou",
+				"background-repeat"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"rel",
+				"relative"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"text-s",
+				"text-decoration-style"
+			],
+			[
+				"app",
+				"appendChild"
+			],
+			[
+				"insert",
+				"insertBefore"
+			],
+			[
+				"country",
+				"countryRoot"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"to",
+				"toLowerCase"
+			],
+			[
+				"animal",
+				"animals"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "browse.php",
+			"settings":
+			{
+				"buffer_size": 2578,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "answers.php",
+			"settings":
+			{
+				"buffer_size": 1183,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "styles/browse.css",
+			"settings":
+			{
+				"buffer_size": 117,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "styles/question.css",
+			"settings":
+			{
+				"buffer_size": 41,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "question.php",
+			"settings":
+			{
+				"buffer_size": 2471,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "newPost.php",
+			"settings":
+			{
+				"buffer_size": 1364,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "menu.php",
+			"settings":
+			{
+				"buffer_size": 4805,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "rein",
+		"selected_items":
+		[
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"in",
+				"Snippet: HTML - Input:select"
+			],
+			[
+				"",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"snippet: for",
+				"Snippet: for (…) {…}"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"REIN",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"RE",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			]
+		],
+		"width": 524.0
+	},
+	"console":
+	{
+		"height": 131.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/styles"
+	],
+	"file_history":
+	[
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/delete.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/newPost.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/submitPost.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/util.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/updateQuestion.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/login.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/question.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/DBMS 2/Final Project/LoadData/eBook.csv",
+		"/C/Users/Zack/Google Drive/RRC Term 3/DBMS 2/Final Project/LoadData/BookAuthor.csv",
+		"/C/Users/Zack/Google Drive/RRC Term 3/DBMS 2/Final Project/LoadData/Author.csv",
+		"/C/Users/Zack/Google Drive/RRC Term 3/DBMS 2/Final Project/LoadData/BookRented.csv",
+		"/C/Users/Zack/Google Drive/RRC Term 3/DBMS 2/Final Project/LoadData/RentalAgreement.csv",
+		"/C/Users/Zack/Google Drive/RRC Term 3/DBMS 2/Final Project/Alter_Tables.sql",
+		"/C/Users/Zack/Desktop/users.csv",
+		"/C/Users/Zack/Google Drive/RRC Term 3/DBMS 2/Final Project/eBook.csv",
+		"/C/Users/Zack/Google Drive/RRC Term 3/DBMS 2/Final Project - Milestone 1/Alter_Tables.sql",
+		"/C/Users/Zack/Google Drive/RRC Term 3/DBMS 2/Assignment 1/Assign1.sql",
+		"/C/Users/Zack/Google Drive/RRC Term 3/DBMS 2/Assignment 4/ogilvie,william_a4.sql",
+		"/C/Takeout/Chrome/BrowserHistory.json",
+		"/C/Takeout/Chrome/SyncSettings.json",
+		"/C/Takeout/Chrome/SearchEngines.json",
+		"/C/Takeout/Tasks/Tasks.json",
+		"/C/Takeout/Chrome/Autofill.json",
+		"/C/Takeout/Profile/Zack Ogilvie.json",
+		"/C/Takeout/Google My Business/account-110529527885824018176/data.json",
+		"/C/Takeout/Mail/All mail Including Spam and Trash.mbox",
+		"/C/Takeout/Location History/Location History.json",
+		"/C/Takeout/Maps (your places)/Saved Places.json",
+		"/C/Takeout/Google Photos/Friday night in Boissevain/IMG_20140530_213555.jpg.json",
+		"/C/Takeout/Fit/Activities/2015-09-21T15_02_42-04_00_PT14M11S_Biking.tcx",
+		"/C/Takeout/Fit/Activities/2015-11-14T14_03_33-05_00_PT11M10S_Biking.tcx",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/vendor/composer/ClassLoader.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/vendor/composer/autoload_real.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/menu.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/vendor/autoload.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/composer.json",
+		"/C/Users/Zack/Downloads/composer.phar",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/browse.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/securimage/words/words.txt",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/securimage/securimage.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/styles/profileWidget.css",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/register.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/update.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/scripts/profileWidget.js",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/profileWidget.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/styles/menu.css",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/securimage/config.inc.php.SAMPLE",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/Assignment 4/insert.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/BITHub.sql",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/Courses.sql",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/Assignment 4/index.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/registerData.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/styles/index.css",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/index.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/styles/register.css",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/scripts/index.js",
+		"/C/Users/Zack/Downloads/simplistic-wysiwyg-editor/index.html",
+		"/C/Users/Zack/AppData/Local/Temp/Temp1_simplistic-wysiwyg-editor.zip/css/style.css",
+		"/C/Users/Zack/Google Drive/RRC Term 3/DBMS 2/Assignment 3/Ogilvie,William_A3.sql",
+		"/C/Users/Zack/Google Drive/RRC Term 3/DBMS 2/Assignment 3/partA.sql",
+		"/C/Users/Zack/Downloads/ResourcePoolUsers.csv",
+		"/C/Users/Zack/Desktop/Class Model/StudentCard.java",
+		"/C/Users/Zack/Desktop/Class Model/Section.java",
+		"/C/Users/Zack/Desktop/Class Model/RegistrationManager.java",
+		"/C/Users/Zack/Desktop/Class Model/Registered.java",
+		"/C/Users/Zack/Desktop/Class Model/Student.java",
+		"/C/Users/Zack/Desktop/Class Model/Instructor.java",
+		"/C/Users/Zack/Desktop/Class Model/Date.java",
+		"/C/Users/Zack/Desktop/Class Model/Course.java",
+		"/C/Users/Zack/Desktop/Class Model/Address.java",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/scripts/register.js",
+		"/C/Users/Zack/Desktop/temp.xml",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub.sql",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/Challenge 7/index.php",
+		"/C/Users/Zack/Google Drive/RRC Term 2/Web Dev/6 Intro to Javascript/functions.js",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/scripts/validate.js",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/Challenge 7/imagePreview.js",
+		"/C/Users/Zack/Downloads/simple-register-form-with-angularjs-material-design/index.html",
+		"/C/Users/Zack/Downloads/simple-register-form-with-angularjs-material-design/js/index.js",
+		"/C/Users/Zack/Downloads/simple-register-form-with-angularjs-material-design/css/style.css",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/Challenge 7/ImageResize.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/Challenge 7/ImageResizeException.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/Challenge 7/resize.php",
+		"/C/Users/Zack/AppData/Local/Temp/Temp1_OgilvieWilliam.zip/OgilvieWilliam/5 session/index.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/OgilvieWilliam.zip",
+		"/C/Users/Zack/Google Drive/RRC Term 3/DBMS 2/Mid-term project/Mid-term Project Part D/Ogilvie_D_Compile.sql",
+		"/C/Users/Zack/Desktop/btree.sql",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/profile.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/logout.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/connect.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/scripts/imagePreview.js",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/file.ps1",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/Assignment 5/index.css",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/Assignment 5/index.php",
+		"/C/xampp/apache/conf/httpd.conf",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/BITHub/styles/profile.css",
+		"/C/Users/Zack/Downloads/img-preview.js",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/Challenge 6/zooland.php",
+		"/C/Users/Zack/Google Drive/Gosu/gosu-1.14.7/bin/gosu",
+		"/C/Users/Zack/export.sql",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Server Admin/1.xml",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/Challenge 6/zooland.css",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/Challenge 6/zooland.json",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/Challenge 6/.DS_Store",
+		"/C/Users/Zack/Desktop/1.xml",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/midterm_starter/5 session/index.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/midterm_starter/4 super_snitches/index.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/midterm_starter/4 super_snitches/connect_db.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/midterm_starter/3 super_secrets/connect_db.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/midterm_starter/3 super_secrets/index.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/midterm_starter/3 super_secrets/super_heroes.sql",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/midterm_starter/2 tasty_treats/index.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/midterm_starter/1 lister/index.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/midterm_starter/nav.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/DBMS 2/trigger.sql",
+		"/C/Users/Zack/Google Drive/RRC Term 3/DBMS 2/Mid-term project/Mid-term Project Part D/Ogilvie_D.bat",
+		"/C/Users/Zack/Google Drive/RRC Term 3/DBMS 2/Report/report.sql",
+		"/C/Users/Zack/Downloads/login.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/DBMS 2/psql.sql",
+		"/C/Users/Zack/Google Drive/RRC Term 3/DBMS 2/conn.sql",
+		"/C/Users/Zack/Downloads/index.html",
+		"/C/Users/Zack/Downloads/dontrun.bat",
+		"/C/Users/Zack/Downloads/dontrun.batch",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/CodeIgniter-3.1.7/application/views/welcome_message.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/CodeIgniter-3.1.7/application/controllers/Welcome.php",
+		"/C/Users/Zack/Downloads/CodeIgniter-3.1.7/CodeIgniter-3.1.7/index.php",
+		"/C/Users/Zack/Google Drive/RRC Term 3/Web Dev 2/Assignment 4/site.css",
+		"/C/Users/Zack/Google Drive/RRC Term 3/DBMS 2/Mid-term project/Mid-term Project Part D/Create_Tables_Ogilvie.sql"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"`",
+			"OgilvieProject",
+			"--",
+			"stintziProject",
+			"openmodal",
+			"documentroot",
+			"=\"\">",
+			"border-radius: 4",
+			"border-radius: 3",
+			"border-radius",
+			"(a.\t)",
+			"pre",
+			"font-size",
+			"userLName",
+			"userId",
+			";\n",
+			"create",
+			"varchar2",
+			"CONSTRAINT",
+			"VARCHAR",
+			"menuTemplate3",
+			";\n",
+			"echo \"<br>\"",
+			"_GET",
+			"know",
+			"tast",
+			"wknd",
+			"443",
+			">",
+			"<",
+			">",
+			"<",
+			">",
+			"<",
+			"443",
+			"contact",
+			"background",
+			"gtgt",
+			"&",
+			">",
+			"submit",
+			"{\n",
+			"sideNav",
+			"443",
+			"});\n",
+			";\n",
+			"5",
+			";\n",
+			"ServiceInvoice",
+			"ProvincialSalesTaxRateException",
+			"#",
+			"container",
+			"section",
+			"/div class=section",
+			"section",
+			"/div class=nav",
+			"nav",
+			"/div class=aside",
+			"aside",
+			"/div class=article",
+			"article",
+			"/div",
+			"header",
+			";\n",
+			"Accessories.",
+			"Accessories ",
+			"AccessoriesChosen",
+			"TradeInAmount",
+			"background",
+			";\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "browse.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2578,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								132,
+								105
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "answers.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								49,
+								49
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "styles/browse.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 117,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37,
+								37
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "styles/question.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 41,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39,
+								39
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "question.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								347,
+								7
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "newPost.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1364,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								445,
+								445
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "menu.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4805,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1918,
+								1918
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 424.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bithub.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Zack\\Google Drive\\RRC Term 2\\Web Dev\\Website\\styles\\about.css"
+			],
+			[
+				"rein",
+				"C:\\Users\\Zack\\Google Drive\\RRC Term 2\\Web Dev\\0 Intro to HTML CSS\\welcome.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 212.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
