@@ -1,3 +1,7 @@
+.question, h1, h4
+{
+	width: max-content;
+}
 #search
 {
 	float: right;
@@ -5,13 +9,14 @@
 	margin-left: 25px;
 	font-size: 35px;
 }
-#main
+.mainLi
 {
-	margin: auto;
+	width: max-content;
 }
 #answers
 {
 	margin-left: 25px;
+	width: max-content;
 }
 .answer
 {

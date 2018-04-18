@@ -2,7 +2,7 @@
 if (!isset($_SESSION)) {
     session_start();
 }
-require "vendor/autoload.php";
+// require "vendor/autoload.php";
 ?>
 <script src="https://cdn.ckeditor.com/ckeditor5/1.0.0-beta.1/classic/ckeditor.js"></script>
 <link rel="stylesheet" type="text/css" href="styles/menu.css"/>
