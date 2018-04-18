@@ -129,17 +129,28 @@ $question = $statement->fetch();
 							<img src="images/check.png" alt="chosen" width="35" height="35">
 						<?php else: ?>
 							<?php if ($_SESSION['userId'] == $question['UserId']): ?>
-							<a href="#" onclick="
+								<a href="#" onclick="
+								$.ajax({
+									async: true,
+									url: 'select.php',
+									type: 'POST',
+									data: { answer: <?= $answer['AnswerId'] ?>,
+									question: <?= $question['QuestionId'] ?> },
+									success: function(){location.reload();} 
+								});
+								">Select</a>
+							<?php endif ?>
+						<?php endif ?>
+						<?php if ((isset($_SESSION['admin']) && $_SESSION['admin'] > 0) || (isset($_SESSION['userId']) && $_SESSION['userId'] == $question['UserId'])): ?>
+							<a style="display: block;" href="#" onclick="
 							$.ajax({
 								async: true,
-								url: 'select.php',
+								url: 'deleteAnswer.php',
 								type: 'POST',
-								data: { answer: <?= $answer['AnswerId'] ?>,
-										question: <?= $question['QuestionId'] ?> },
+								data: { answer: <?= $answer['AnswerId'] ?>},
 								success: function(){location.reload();} 
 							});
-							">Select</a>
-							<?php endif ?>
+							">Delete</a>
 						<?php endif ?>
 						
 
