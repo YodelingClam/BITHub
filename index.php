@@ -18,9 +18,6 @@ require 'connect.php';
 			<div id="redditThing" class="column">
 				<script src='https://redditjs.com/subreddit.js' data-subreddit='programming' data-theme='dark' ></script>
 			</div>
-			<div class="column"">
-
-			</div>
 			<div class="column">
 				<?php 
 				$query = "SELECT * FROM question JOIN users USING(UserId) JOIN course USING(CourseId) ORDER BY TimeStamp DESC";

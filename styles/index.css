@@ -27,7 +27,7 @@ body
     -ms-flex: 1;
     flex: 1;
     padding: 10px;
-    width: 33%;
+    width: 50%;
     overflow-x: wrap;
 }
 
@@ -46,4 +46,8 @@ iframe
 #redditThing > div
 {
     height: 100%;
+}
+.question
+{
+    width: auto;
 }
