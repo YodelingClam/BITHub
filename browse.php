@@ -28,7 +28,7 @@ require 'connect.php';
 				<div class="mainLi">
 					<div class="question">
 						<?php $pic = 'images/users/'.$question["ProfilePicURL"] ?>
-						<a href="question.php?post=<?= $question['QuestionId'] ?>"><h1><?= $question['Title'] ?></h1></a>
+						<a href="question.php?post=<?= $question['QuestionId'] ?>&course=<?= $question['CourseName'] ?>&title=<?= $question['Title'] ?>"><h1><?= $question['Title'] ?></h1></a>
 						<h4><?= $question['TimeStamp'] ?></h4>
 						<h4>Course: <?= $question['CourseName'] ?></h4>
 						<p><?= $question['Content'] ?></p>
@@ -78,9 +78,9 @@ require 'connect.php';
 						$statement = $db->prepare($query);
 						$statement -> bindValue(":questionid", $question['QuestionId']);
 						$statement -> execute(); 
-						$answers = $statement->fetchAll();
+						$answer = $statement->fetch();
 						?>
-						<?php foreach ($answers as $key => $answer): ?>
+						<?php if ($answer != null): ?>
 							<?php $answerPic = 'images/users/'.$answer["ProfilePicURL"] ?>
 							<div>
 								<img class="answerPic" src=<?= $answerPic ?> alt="profile picture" onerror="this.onerror=null; this.src='images/users/default.jpg';" width="75" height="75">
@@ -108,7 +108,7 @@ require 'connect.php';
 									<p><?= $answer['Content'] ?></p>
 								</div>
 							</div>
-						<?php endforeach ?>
+						<?php endif ?>
 					</div>
 				</div>
 				<br>
@@ -123,7 +123,7 @@ require 'connect.php';
 		$courses = $statement->fetchAll();
 
 		?>
-		<select id="course" name="course" onchange="
+		<select id="course" name="course" onclick="
 		$.ajax({
 			async: false,
 			url: 'util.php',
@@ -132,6 +132,7 @@ require 'connect.php';
 			success: function(data) { $('#questions').html(data); }
 		});
 		">
+			<option value="" selected></option>
 		<?php foreach ($courses as $key => $value): ?>
 			<option value="<?= $value['CourseId'] ?>" > <?= $value['CourseAbv'] .' - '. $value['CourseName']?></option>
 		<?php endforeach ?>

@@ -13,7 +13,7 @@ $question = $statement->fetch();
 <head>
 	<title>BITHub</title>
 	<script src="https://cdn.ckeditor.com/ckeditor5/1.0.0-beta.1/classic/ckeditor.js"></script>
-	<link rel="stylesheet" type="text/css" href="styles/question.css">
+	<link rel="stylesheet" type="text/css" href="styles/browse.css">
 </head>
 <body>
 	<?php include 'menu.php'; ?>
@@ -45,32 +45,48 @@ $question = $statement->fetch();
 		</script>
 	<?php else: ?>
 		<div id="question">
-			<h1><?= $question['Title'] ?></h1>
-			<h2><a onmouseenter="$('#profilePopup<?=$question['UserId']?>').show();" onmouseleave="$('#profilePopup<?=$question['UserId']?>').hide();" href="#"><?= $question['FName'].' '.$question['LName'] ?></a></h2>
 
-			<div class="drop decor3_2 dropToLeft" style="width: auto;">
-				<div id="profilePopup<?=$question['UserId']?>" style="width: auto; position: absolute; display: none; z-index: 1000; background-color: #333;" class="profile-box big whiteText">
-					<figure class="profile-header">
-						<div class="profile-img" style="position: relative;" onmouseenter="$('#clickToChange').show();" onmouseleave="$('#clickToChange').hide();">
-							<span><img id="clickToChange" src="images/users/clickToChange.jpg" alt="wtf" onclick="$('#changePic').click()" ><img class="profile-avatar" src=<?= 'images/users/'.$question['ProfilePicURL'] ?> alt="profile picture" onerror="this.onerror=null; this.src='images/users/default.jpg';" width="150" height="150"></span>
-						</div>
-						<figcaption class="profile-name"><?= $question["FName"].' '.$question["LName"] ?></figcaption>
-					</figure>
-					<p class="profile-detail">
-						<span class="profile-label">Questions:</span><span class="profile-value"><?= 0 ?></span>
-					</p>
-					<p class="profile-detail">
-						<span class="profile-label">Answers:</span><span class="profile-value"><?= 0 ?></span>
-					</p>
+			<div class="question">
+				<?php $pic = 'images/users/'.$question["ProfilePicURL"] ?>
+				<h1><?= $question['Title'] ?></h1>
+				<h2><a onmouseenter="$('#profilePopup<?=$question['QuestionId']?>').show();" onmouseleave="$('#profilePopup<?=$question['QuestionId']?>').hide();" href="#"><?= $question['FName'].' '.$question['LName'] ?></a></h2>
+
+				<div class="drop decor3_2 dropToLeft" style="width: auto;">
+					<div id="profilePopup<?=$question['QuestionId']?>" style="width: auto; position: absolute; display: none; z-index: 1000; background-color: #333;" class="profile-box big whiteText">
+						<figure class="profile-header">
+							<div class="profile-img" style="position: relative;" onmouseenter="$('#clickToChange').show();" onmouseleave="$('#clickToChange').hide();">
+								<span><img id="clickToChange" src="images/users/clickToChange.jpg" alt="wtf" onclick="$('#changePic').click()" ><img class="profile-avatar" src=<?= 'images/users/'.$question['ProfilePicURL'] ?> alt="profile picture" onerror="this.onerror=null; this.src='images/users/default.jpg';" width="150" height="150"></span>
+							</div>
+							<figcaption class="profile-name"><?= $question["FName"].' '.$question["LName"] ?></figcaption>
+						</figure>
+						<p class="profile-detail">
+							<span class="profile-label">Questions:</span><span class="profile-value"><?= 0 ?></span>
+						</p>
+						<p class="profile-detail">
+							<span class="profile-label">Answers:</span><span class="profile-value"><?= 0 ?></span>
+						</p>
+					</div>
 				</div>
+
+				<h4><?= $question['TimeStamp'] ?></h4>
+				<h4>Course: <?= $question['CourseName'] ?></h4>
+				<p><?= $question['Content'] ?></p>
+				<?php if ((isset($_SESSION['admin']) && $_SESSION['admin'] > 0) || (isset($_SESSION['userId']) && $_SESSION['userId'] == $question['UserId'])): ?>
+					<a href="question.php?post=<?= $question['QuestionId'] ?>&edit">Edit</a>
+				<?php endif ?>
+				<a href="#" onclick="$('#answer<?=$question['QuestionId']?>').show();">Answer</a>
+				<?php if (isset($_SESSION['admin']) && $_SESSION['admin'] > 1): ?>
+					<a href="#" onclick="
+					$.ajax({
+						async: true,
+						url: 'delete.php',
+						type: 'POST',
+						data: { question: <?= $question['QuestionId'] ?> },
+						success: function(){location.reload();} 
+					});
+					">Delete</a>
+				<?php endif ?>
 			</div>
-			<h4><?= $question['TimeStamp'] ?></h4>
-			<h4>Course: <?= $question['CourseName'] ?> <br> Tags: <?= $question['Tags'] ?></h4>
-			<p><?= $question['Content'] ?></p>
-			<?php if ((isset($_SESSION['admin']) && $_SESSION['admin'] > 0) || $_SESSION['userId'] == $question['UserId']): ?>
-				<a href="question.php?post=<?= $question['QuestionId'] ?>&edit">Edit</a>
-			<?php endif ?>
-			<a href="#" onclick="$('#answer<?=$question['QuestionId']?>').show();">Answer</a>
 			<div id="answer<?=$question['QuestionId']?>" style="display: none;">
 				<form action="newAnswer.php" method="post" style="width: 50%;">
 					<textarea id="editor<?=$question['QuestionId']?>" name="content" rows='10' cols="40" style="width: 50%; height: 250px;"></textarea><br>
@@ -102,28 +118,32 @@ $question = $statement->fetch();
 			$answers = $statement->fetchAll();
 			?>
 			<?php foreach ($answers as $key => $answer): ?>
+				<?php $answerPic = 'images/users/'.$answer["ProfilePicURL"] ?>
 				<div>
-					<br><br>
-					<h2><a onmouseenter="$('#profilePopup<?=$answer['UserId']?>').show();" onmouseleave="$('#profilePopup<?=$answer['UserId']?>').hide();" href="#"><?= $answer['FName'].' '.$answer['LName'] ?></a></h2>
+					<img class="answerPic" src=<?= $answerPic ?> alt="profile picture" onerror="this.onerror=null; this.src='images/users/default.jpg';" width="75" height="75">
+					<div class="answer">
 
-					<div class="drop decor3_2 dropToLeft" style="width: auto;">
-						<div id="profilePopup<?=$answer['UserId']?>" style="width: auto; position: absolute; display: none; z-index: 1000; background-color: #333;" class="profile-box big whiteText">
-							<figure class="profile-header">
-								<div class="profile-img" style="position: relative;" onmouseenter="$('#clickToChange').show();" onmouseleave="$('#clickToChange').hide();">
-									<span><img class="profile-avatar" src=<?= 'images/users/'.$answer['ProfilePicURL'] ?> alt="profile picture" onerror="this.onerror=null; this.src='images/users/default.jpg';" width="150" height="150"></span>
-								</div>
-								<figcaption class="profile-name"><?= $answer["FName"].' '.$answer["LName"] ?></figcaption>
-							</figure>
-							<p class="profile-detail">
-								<span class="profile-label">Questions:</span><span class="profile-value"><?= 0 ?></span>
-							</p>
-							<p class="profile-detail">
-								<span class="profile-label">Answers:</span><span class="profile-value"><?= 0 ?></span>
-							</p>
+						<h3><a onmouseenter="$('#profilePopup<?=$answer['AnswerId']?>').show();" onmouseleave="$('#profilePopup<?=$answer['AnswerId']?>').hide();" href="#"><?= $answer['FName'].' '.$answer['LName'] ?></a></h3>
+
+						<div class="drop decor3_2 dropToLeft" style="width: auto;">
+							<div id="profilePopup<?=$answer['AnswerId']?>" style="width: auto; position: absolute; display: none; z-index: 1000; background-color: #333;" class="profile-box big whiteText">
+								<figure class="profile-header">
+									<div class="profile-img" style="position: relative;" onmouseenter="$('#clickToChange').show();" onmouseleave="$('#clickToChange').hide();">
+										<span><img class="profile-avatar" src=<?= 'images/users/'.$answer['ProfilePicURL'] ?> alt="profile picture" onerror="this.onerror=null; this.src='images/users/default.jpg';" width="150" height="150"></span>
+									</div>
+									<figcaption class="profile-name"><?= $answer["FName"].' '.$answer["LName"] ?></figcaption>
+								</figure>
+								<p class="profile-detail">
+									<span class="profile-label">Questions:</span><span class="profile-value"><?= 0 ?></span>
+								</p>
+								<p class="profile-detail">
+									<span class="profile-label">Answers:</span><span class="profile-value"><?= 0 ?></span>
+								</p>
+							</div>
 						</div>
-					</div>
 
-					<p><?= $answer['Content'] ?></p>
+						<p><?= $answer['Content'] ?></p>
+					</div>
 				</div>
 			<?php endforeach ?>
 		</div>

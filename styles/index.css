@@ -1,11 +1,24 @@
+html
+{
+    height: 94%;
+}
+body
+{
+    height: 100%;
+}
 #content * {
     box-sizing: border-box;
+}
+#content
+{
+    height: 100%;
 }
 
 /* Container for flexboxes */
 .row {
     display: -webkit-flex;
     display: flex;
+    height: 100%;
 }
 
 /* Create three equal columns that sits next to each other */
@@ -14,6 +27,8 @@
     -ms-flex: 1;
     flex: 1;
     padding: 10px;
+    width: 33%;
+    overflow-x: wrap;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -22,4 +37,13 @@
       -webkit-flex-direction: column;
       flex-direction: column;
     }
+}
+iframe
+{
+    height: 100%;
+    width: 100%;
+}
+#redditThing > div
+{
+    height: 100%;
 }

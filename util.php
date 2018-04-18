@@ -10,7 +10,7 @@ $questionsUtil = $statement->fetchAll();
 <?php foreach ($questionsUtil as $key => $question): ?>
 	<div class="mainLi">
 		<?php $pic = 'images/users/'.$question["ProfilePicURL"] ?>
-		<a href="question.php?post=<?= $question['QuestionId'] ?>"><h1><?= $question['Title'] ?></h1></a>
+		<a href="question.php?post=<?= $question['QuestionId'] ?>&course=<?= $question['CourseName'] ?>&title=<?= $question['Title'] ?>"><h1><?= $question['Title'] ?></h1></a>
 		<h4><?= $question['TimeStamp'] ?></h4>
 		<h4>Course: <?= $question['CourseName'] ?></h4>
 		<p><?= $question['Content'] ?></p>
