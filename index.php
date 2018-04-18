@@ -76,7 +76,7 @@ require 'connect.php';
 
 							<div id="answers" style="width: auto;">
 								<?php
-								$query = "SELECT * FROM answer JOIN users USING(UserId) WHERE QuestionId = :questionid";
+								$query = "SELECT * FROM answer JOIN users USING(UserId) WHERE QuestionId = :questionid AND AnswerId = (SELECT Selected FROM question WHERE QuestionId = :questionid)";
 								$statement = $db->prepare($query);
 								$statement -> bindValue(":questionid", $question['QuestionId']);
 								$statement -> execute(); 
@@ -89,6 +89,7 @@ require 'connect.php';
 										<div class="answer">
 
 											<h3><a href="#"><?= $answer['FName'].' '.$answer['LName'] ?></a></h3>
+											<img src="images/check.png" alt="chosen" width="35" height="35">
 
 											<p><?= $answer['Content'] ?></p>
 										</div>

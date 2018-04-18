@@ -111,7 +111,7 @@ $question = $statement->fetch();
 		</div>
 		<div id="answers">
 			<?php
-			$query = "SELECT * FROM answer JOIN users USING(UserId) WHERE QuestionId = :questionid";
+			$query = "SELECT * FROM answer JOIN users USING(UserId) WHERE QuestionId = :questionid ORDER BY TimeStamp";
 			$statement = $db->prepare($query);
 			$statement -> bindValue(":questionid", $question['QuestionId']);
 			$statement -> execute(); 
@@ -124,6 +124,21 @@ $question = $statement->fetch();
 					<div class="answer">
 
 						<h3><a onmouseenter="$('#profilePopup<?=$answer['AnswerId']?>').show();" onmouseleave="$('#profilePopup<?=$answer['AnswerId']?>').hide();" href="#"><?= $answer['FName'].' '.$answer['LName'] ?></a></h3>
+						<?php if ($question['Selected'] == $answer['AnswerId']): ?>
+							<img src="images/check.png" alt="chosen" width="35" height="35">
+						<?php else: ?>
+							<a href="#" onclick="
+							$.ajax({
+								async: true,
+								url: 'select.php',
+								type: 'POST',
+								data: { answer: <?= $answer['AnswerId'] ?>,
+										question: <?= $question['QuestionId'] ?> },
+								success: function(){location.reload();} 
+							});
+							">Select</a>
+						<?php endif ?>
+						
 
 						<div class="drop decor3_2 dropToLeft" style="width: auto;">
 							<div id="profilePopup<?=$answer['AnswerId']?>" style="width: auto; position: absolute; display: none; z-index: 1000; background-color: #333;" class="profile-box big whiteText">

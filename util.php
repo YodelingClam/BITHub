@@ -53,19 +53,20 @@ $questionsUtil = $statement->fetchAll();
 
 		<div id="answers">
 			<?php
-			$query = "SELECT * FROM answer JOIN users USING(UserId) WHERE QuestionId = :questionid";
+			$query = "SELECT * FROM answer JOIN users USING(UserId) WHERE QuestionId = :questionid AND AnswerId = (SELECT Selected FROM question WHERE QuestionId = :questionid)";
 			$statement = $db->prepare($query);
 			$statement -> bindValue(":questionid", $question['QuestionId']);
 			$statement -> execute(); 
-			$answers = $statement->fetchAll();
+			$answer = $statement->fetch();
 			?>
-			<?php foreach ($answers as $key => $answer): ?>
+			<?php if ($answer != null): ?>
 				<?php $answerPic = 'images/users/'.$answer["ProfilePicURL"] ?>
 				<div>
 					<img class="answerPic" src=<?= $answerPic ?> alt="profile picture" onerror="this.onerror=null; this.src='images/users/default.jpg';" width="75" height="75">
 					<div class="answer">
 
 						<h3><a onmouseenter="$('#profilePopup<?=$answer['AnswerId']?>').show();" onmouseleave="$('#profilePopup<?=$answer['AnswerId']?>').hide();" href="#"><?= $answer['FName'].' '.$answer['LName'] ?></a></h3>
+						<img src="images/check.png" alt="chosen" width="35" height="35">
 						<div class="drop decor3_2 dropToLeft" style="width: auto;">
 							<div id="profilePopup<?=$answer['AnswerId']?>" style="width: auto; position: absolute; display: none; z-index: 1000; background-color: #333;" class="profile-box big whiteText">
 								<figure class="profile-header">
@@ -85,7 +86,7 @@ $questionsUtil = $statement->fetchAll();
 						<p><?= $answer['Content'] ?></p>
 					</div>
 				</div>
-			<?php endforeach ?>
+			<?php endif ?>
 		</div>
 
 
