@@ -29,8 +29,10 @@ require 'connect.php';
 					<div class="question">
 						<?php $pic = 'images/users/'.$question["ProfilePicURL"] ?>
 						<a href="question.php?post=<?= $question['QuestionId'] ?>&course=<?= $question['CourseName'] ?>&title=<?= $question['Title'] ?>"><h1><?= $question['Title'] ?></h1></a>
-						<h4><?= $question['TimeStamp'] ?></h4>
-						<h4>Course: <?= $question['CourseName'] ?></h4>
+						<h3><?= $question['FName'].' '.$question['LName'] ?></h3>
+						<p style="display: inline;"><?= $question['TimeStamp'] ?></p>
+						<p style="margin: 0px;">Course: <?= $question['CourseName'] ?></p>
+						<hr>
 						<p><?= $question['Content'] ?></p>
 						<?php if ((isset($_SESSION['admin']) && $_SESSION['admin'] > 0) || (isset($_SESSION['userId']) && $_SESSION['userId'] == $question['UserId'])): ?>
 							<a href="question.php?post=<?= $question['QuestionId'] ?>&edit">Edit</a>
@@ -133,7 +135,7 @@ require 'connect.php';
 			success: function(data) { $('#questions').html(data); }
 		});
 		">
-			<option value="" selected></option>
+		<option value="" selected></option>
 		<?php foreach ($courses as $key => $value): ?>
 			<option value="<?= $value['CourseId'] ?>" > <?= $value['CourseAbv'] .' - '. $value['CourseName']?></option>
 		<?php endforeach ?>

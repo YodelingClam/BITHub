@@ -46,10 +46,10 @@ $question = $statement->fetch();
 	<?php else: ?>
 		<div id="question">
 
-			<div class="question">
+			<div style="width: max-content;" class="question">
 				<?php $pic = 'images/users/'.$question["ProfilePicURL"] ?>
 				<h1><?= $question['Title'] ?></h1>
-				<h2><a onmouseenter="$('#profilePopup<?=$question['QuestionId']?>').show();" onmouseleave="$('#profilePopup<?=$question['QuestionId']?>').hide();" href="#"><?= $question['FName'].' '.$question['LName'] ?></a></h2>
+				<h3><a onmouseenter="$('#profilePopup<?=$question['QuestionId']?>').show();" onmouseleave="$('#profilePopup<?=$question['QuestionId']?>').hide();" href="#"><?= $question['FName'].' '.$question['LName'] ?></a></h3>
 
 				<div class="drop decor3_2 dropToLeft" style="width: auto;">
 					<div id="profilePopup<?=$question['QuestionId']?>" style="width: auto; position: absolute; display: none; z-index: 1000; background-color: #333;" class="profile-box big whiteText">
@@ -68,8 +68,9 @@ $question = $statement->fetch();
 					</div>
 				</div>
 
-				<h4><?= $question['TimeStamp'] ?></h4>
-				<h4>Course: <?= $question['CourseName'] ?></h4>
+				<p style="display: inline;"><?= $question['TimeStamp'] ?></p>
+				<p style="margin: 0px;">Course: <?= $question['CourseName'] ?></p>
+				<hr>
 				<p><?= $question['Content'] ?></p>
 				<?php if ((isset($_SESSION['admin']) && $_SESSION['admin'] > 0) || (isset($_SESSION['userId']) && $_SESSION['userId'] == $question['UserId'])): ?>
 					<a href="question.php?post=<?= $question['QuestionId'] ?>&edit">Edit</a>
