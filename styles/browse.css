@@ -1,9 +1,32 @@
-
+#search
+{
+	float: right;
+	margin-right: 25px;
+	margin-left: 25px;
+	font-size: 35px;
+}
 #main
 {
 	margin: auto;
 }
 #answers
 {
-	margin-left: 55px;
+	margin-left: 25px;
+}
+.answer
+{
+	border-left: grey solid 1px;
+	border-bottom: grey solid 1px;
+	padding-left: 15px;
+	margin-top: 15px;
+	width: max-content;
+	margin-left: 80px;
+}
+a
+{
+	text-decoration: none;
+}
+.answerPic
+{
+	float: left;
 }

@@ -26,10 +26,11 @@ require 'connect.php';
 		<div class="mainUl">
 			<?php foreach ($questions as $key => $question): ?>
 				<div class="mainLi">
-					<?php $pic = 'images/users/'.$question["ProfilePicURL"] ?>
-					<a href="question.php?post=<?= $question['QuestionId'] ?>"><h1><?= $question['Title'] ?></h1></a>
-					<h4><?= $question['TimeStamp'] ?></h4>
-					<h4>Course: <?= $question['CourseName'] ?>
+					<div class="question">
+						<?php $pic = 'images/users/'.$question["ProfilePicURL"] ?>
+						<a href="question.php?post=<?= $question['QuestionId'] ?>"><h1><?= $question['Title'] ?></h1></a>
+						<h4><?= $question['TimeStamp'] ?></h4>
+						<h4>Course: <?= $question['CourseName'] ?></h4>
 						<p><?= $question['Content'] ?></p>
 						<?php if ((isset($_SESSION['admin']) && $_SESSION['admin'] > 0) || (isset($_SESSION['userId']) && $_SESSION['userId'] == $question['UserId'])): ?>
 							<a href="question.php?post=<?= $question['QuestionId'] ?>&edit">Edit</a>
@@ -46,45 +47,49 @@ require 'connect.php';
 							});
 							">Delete</a>
 						<?php endif ?>
+					</div>
 
 
-						<div id="answer<?=$question['QuestionId']?>" style="display: none;">
-							<form action="newAnswer.php" method="post" style="width: 90%;">
-								<textarea id="editor<?=$question['QuestionId']?>" name="content" style="width: 50%; height: 250px;"></textarea><br>
-								<?php 
-								require_once 'securimage/securimage.php';
-								echo "<div id='captcha_container_1'>\n";
-								echo Securimage::getCaptchaHtml();
-								echo "\n</div>\n"; 
-								?>
-								<button type="submit">Submit</button><br>
-								<button type="button" onclick="$('#answer<?=$question['QuestionId']?>').hide();">Cancel</button>
-								<input type="hidden" name="questionid" value="<?=$question['QuestionId']?>">
-							</form>
-							<script>
-								ClassicEditor
-								.create( document.querySelector( '#editor<?=$question['QuestionId']?>' ) )
-								.catch( error => {
-									console.error( error );
-								} );
-							</script>
-						</div>
-
-						<div id="answers">
-							<?php
-							$query = "SELECT * FROM answer JOIN users USING(UserId) WHERE QuestionId = :questionid";
-							$statement = $db->prepare($query);
-							$statement -> bindValue(":questionid", $question['QuestionId']);
-							$statement -> execute(); 
-							$answers = $statement->fetchAll();
+					<div id="answer<?=$question['QuestionId']?>" style="display: none;">
+						<form action="newAnswer.php" method="post" style="width: 90%;">
+							<textarea id="editor<?=$question['QuestionId']?>" name="content" style="width: 50%; height: 250px;"></textarea><br>
+							<?php 
+							require_once 'securimage/securimage.php';
+							echo "<div id='captcha_container_1'>\n";
+							echo Securimage::getCaptchaHtml();
+							echo "\n</div>\n"; 
 							?>
-							<?php foreach ($answers as $key => $answer): ?>
-								<div>
-									<br>
-									<h3><a onmouseenter="$('#profilePopup<?=$answer['UserId']?>').show();" onmouseleave="$('#profilePopup<?=$answer['UserId']?>').hide();" href="#"><?= $answer['FName'].' '.$answer['LName'] ?></a></h3>
+							<button type="submit">Submit</button><br>
+							<button type="button" onclick="$('#answer<?=$question['QuestionId']?>').hide();">Cancel</button>
+							<input type="hidden" name="questionid" value="<?=$question['QuestionId']?>">
+						</form>
+						<script>
+							ClassicEditor
+							.create( document.querySelector( '#editor<?=$question['QuestionId']?>' ) )
+							.catch( error => {
+								console.error( error );
+							} );
+						</script>
+					</div>
+
+					<div id="answers">
+						<?php
+						$query = "SELECT * FROM answer JOIN users USING(UserId) WHERE QuestionId = :questionid";
+						$statement = $db->prepare($query);
+						$statement -> bindValue(":questionid", $question['QuestionId']);
+						$statement -> execute(); 
+						$answers = $statement->fetchAll();
+						?>
+						<?php foreach ($answers as $key => $answer): ?>
+							<?php $answerPic = 'images/users/'.$answer["ProfilePicURL"] ?>
+							<div>
+								<img class="answerPic" src=<?= $answerPic ?> alt="profile picture" onerror="this.onerror=null; this.src='images/users/default.jpg';" width="75" height="75">
+								<div class="answer">
+
+									<h3><a onmouseenter="$('#profilePopup<?=$answer['AnswerId']?>').show();" onmouseleave="$('#profilePopup<?=$answer['AnswerId']?>').hide();" href="#"><?= $answer['FName'].' '.$answer['LName'] ?></a></h3>
 
 									<div class="drop decor3_2 dropToLeft" style="width: auto;">
-										<div id="profilePopup<?=$answer['UserId']?>" style="width: auto; position: absolute; display: none; z-index: 1000; background-color: #333;" class="profile-box big whiteText">
+										<div id="profilePopup<?=$answer['AnswerId']?>" style="width: auto; position: absolute; display: none; z-index: 1000; background-color: #333;" class="profile-box big whiteText">
 											<figure class="profile-header">
 												<div class="profile-img" style="position: relative;" onmouseenter="$('#clickToChange').show();" onmouseleave="$('#clickToChange').hide();">
 													<span><img class="profile-avatar" src=<?= 'images/users/'.$answer['ProfilePicURL'] ?> alt="profile picture" onerror="this.onerror=null; this.src='images/users/default.jpg';" width="150" height="150"></span>
@@ -102,41 +107,43 @@ require 'connect.php';
 
 									<p><?= $answer['Content'] ?></p>
 								</div>
-							<?php endforeach ?>
-						</div>
+							</div>
+						<?php endforeach ?>
 					</div>
-				<?php endforeach ?>
-			</div>
-			<?php break;?>
-			<?php case 'course': ?>
-			<?php 
-			$query = "SELECT * FROM course ORDER BY CourseAbv";
-			$statement = $db->prepare($query);	
-			$statement -> execute(); 
-			$courses = $statement->fetchAll();
-
-			?>
-			<select id="course" name="course" onchange="
-			$.ajax({
-				async: false,
-				url: 'util.php',
-				type: 'POST',
-				data: { course: $('#course').val() },
-				success: function(data) { $('#questions').html(data); }
-			});
-			">
-			<?php foreach ($courses as $key => $value): ?>
-				<option value="<?= $value['CourseId'] ?>" > <?= $value['CourseAbv'] .' - '. $value['CourseName']?></option>
+				</div>
+				<br>
 			<?php endforeach ?>
-		</select>
-
-		<div id="questions" class="mainUl">
-
 		</div>
-
 		<?php break;?>
-		<?php endswitch;?>
+		<?php case 'course': ?>
+		<?php 
+		$query = "SELECT * FROM course ORDER BY CourseAbv";
+		$statement = $db->prepare($query);	
+		$statement -> execute(); 
+		$courses = $statement->fetchAll();
+
+		?>
+		<select id="course" name="course" onchange="
+		$.ajax({
+			async: false,
+			url: 'util.php',
+			type: 'POST',
+			data: { course: $('#course').val() },
+			success: function(data) { $('#questions').html(data); }
+		});
+		">
+		<?php foreach ($courses as $key => $value): ?>
+			<option value="<?= $value['CourseId'] ?>" > <?= $value['CourseAbv'] .' - '. $value['CourseName']?></option>
+		<?php endforeach ?>
+	</select>
+
+	<div id="questions" class="mainUl">
+
 	</div>
+
+	<?php break;?>
+	<?php endswitch;?>
+</div>
 </body>
 </html>
 

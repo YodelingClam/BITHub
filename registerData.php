@@ -42,7 +42,7 @@ if ($_POST['password'] == $_POST['password2']) {
 	$path_parts = pathinfo($image_filename);
 	$ProfilePicURL = $_POST['firstname'].'_'.$_POST['lastname'].'.'.$path_parts['extension'];
 	require 'connect.php';
-	$query = "INSERT INTO Users (FName, LName, Email, PasswordHash, ProfilePicURL) VALUES (:fname, :lname, :email, :passwordhash, :ProfilePicURL)";
+	$query = "INSERT INTO users (FName, LName, Email, PasswordHash, ProfilePicURL) VALUES (:fname, :lname, :email, :passwordhash, :ProfilePicURL)";
 	$statement = $db -> prepare($query);
 	$statement -> bindValue(":fname", $fname);
 	$statement -> bindValue(":lname", $lname);

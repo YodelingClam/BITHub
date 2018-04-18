@@ -24,7 +24,7 @@
 			<label for="firstname">First Name:</label>
 			<input id="firstname" name="firstname" type="text" placeholder="First Name" required/>
 			<br>
-			<label for="lastname">First Name:</label>
+			<label for="lastname">Last Name:</label>
 			<input id="lastname" name="lastname" type="text" placeholder="Last Name" required/>
 			<br>
 			<label for="ImgControl">Profile Picture</label>

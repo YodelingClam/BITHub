@@ -2,8 +2,8 @@
 <script type="text/javascript" src="scripts/profileWidget.js"></script>
 <div class="profile-box big">
   <figure class="profile-header">
-    <div class="profile-img" style="position: relative;" onmouseenter="$('#clickToChange').show();" onmouseleave="$('#clickToChange').hide();">
-      <span><img id="clickToChange" src="images/users/clickToChange.jpg" alt="wtf" onclick="$('#changePic').click()" ><img class="profile-avatar" src=<?= $userPic ?> alt="profile picture" onerror="this.onerror=null; this.src='images/users/default.jpg';" width="150" height="150"></span>
+    <div class="profile-img" style="position: relative;">
+      <span><img class="profile-avatar" src=<?= $userPic ?> alt="profile picture" onerror="this.onerror=null; this.src='images/users/default.jpg';" width="150" height="150"></span>
     </div>
     <figcaption class="profile-name"><?= $_SESSION["userName"].' '.$_SESSION["userLName"] ?></figcaption>
   </figure>
