@@ -42,5 +42,11 @@ $courses = $statement->fetchAll();
 			} );
 		</script>
 	</form>
+	<style>
+		.ck-editor__editable
+		{
+		    height: 500px;
+		}
+	</style>
 </body>
 </html>
