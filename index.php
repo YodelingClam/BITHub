@@ -88,24 +88,7 @@ require 'connect.php';
 										<img class="answerPic" src=<?= $answerPic ?> alt="profile picture" onerror="this.onerror=null; this.src='images/users/default.jpg';" width="75" height="75">
 										<div class="answer">
 
-											<h3><a onmouseenter="$('#profilePopup<?=$answer['AnswerId']?>').show();" onmouseleave="$('#profilePopup<?=$answer['AnswerId']?>').hide();" href="#"><?= $answer['FName'].' '.$answer['LName'] ?></a></h3>
-
-											<div class="drop decor3_2 dropToLeft" style="width: auto;">
-												<div id="profilePopup<?=$answer['AnswerId']?>" style="width: auto; position: absolute; display: none; z-index: 1000; background-color: #333;" class="profile-box big whiteText">
-													<figure class="profile-header">
-														<div class="profile-img" style="position: relative;" onmouseenter="$('#clickToChange').show();" onmouseleave="$('#clickToChange').hide();">
-															<span><img class="profile-avatar" src=<?= 'images/users/'.$answer['ProfilePicURL'] ?> alt="profile picture" onerror="this.onerror=null; this.src='images/users/default.jpg';" width="150" height="150"></span>
-														</div>
-														<figcaption class="profile-name"><?= $answer["FName"].' '.$answer["LName"] ?></figcaption>
-													</figure>
-													<p class="profile-detail">
-														<span class="profile-label">Questions:</span><span class="profile-value"><?= 0 ?></span>
-													</p>
-													<p class="profile-detail">
-														<span class="profile-label">Answers:</span><span class="profile-value"><?= 0 ?></span>
-													</p>
-												</div>
-											</div>
+											<h3><a href="#"><?= $answer['FName'].' '.$answer['LName'] ?></a></h3>
 
 											<p><?= $answer['Content'] ?></p>
 										</div>
